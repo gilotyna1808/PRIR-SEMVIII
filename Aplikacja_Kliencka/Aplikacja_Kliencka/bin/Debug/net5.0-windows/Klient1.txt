@@ -1,0 +1,23 @@
+[25.04.2022 17:29:31] Uruchomienie klienta
+[25.04.2022 17:29:35] Pobranie wiadomości
+[25.04.2022 17:29:35] Uruchomienie Obliczen, Argumenty(Prime 17)
+[25.04.2022 17:29:48] Koniec Obliczeń
+[25.04.2022 17:29:48] Koniec polaczenia z serwisem kolejkowania
+[25.04.2022 17:30:01] Uruchomienie klienta
+[25.04.2022 17:30:04] Koniec polaczenia z serwisem kolejkowania
+[25.04.2022 17:30:16] Uruchomienie klienta
+[25.04.2022 17:30:19] Pobranie wiadomości
+[25.04.2022 17:30:19] Uruchomienie Obliczen, Argumenty(Fibonacci 24)
+[25.04.2022 17:30:21] Koniec Obliczeń
+[25.04.2022 17:30:21] Koniec polaczenia z serwisem kolejkowania
+[25.04.2022 17:30:31] Uruchomienie klienta
+[25.04.2022 17:30:34] Pobranie wiadomości
+[25.04.2022 17:30:34] Uruchomienie Obliczen, Argumenty(Prime 5)
+[25.04.2022 17:30:36] Koniec Obliczeń
+[25.04.2022 17:30:36] Koniec polaczenia z serwisem kolejkowania
+[25.04.2022 17:30:40] Uruchomienie klienta
+[25.04.2022 17:30:43] Koniec polaczenia z serwisem kolejkowania
+[25.04.2022 17:30:48] Uruchomienie klienta
+[25.04.2022 17:30:51] Pobranie wiadomości
+[25.04.2022 17:30:51] Uruchomienie Obliczen, Argumenty(Primes 5)
+[25.04.2022 17:30:53] Koniec polaczenia z serwisem kolejkowania

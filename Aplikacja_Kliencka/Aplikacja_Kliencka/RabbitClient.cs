@@ -16,46 +16,53 @@ namespace Aplikacja_Kliencka
     {
         /// <summary>
         /// Flaga działania klienta
-        /// </summary
+        /// </summary>
         private bool flagIsRuning = false;
         /// <summary>
         /// Pole przehowujące wątek, który w tle jest połączony z serwisem
-        /// </summary
+        /// </summary>
         private Thread thread = null;
         /// <summary>
         /// Semafor czekający na zakończenie pracy klienta
-        /// </summary
+        /// </summary>
         protected volatile AutoResetEvent semaphore = new AutoResetEvent(true);
         /// <summary>
         /// Flaga zatrzymania pracy klienta
-        /// </summary
+        /// </summary>
         private bool flagStop = true;
         /// <summary>
         /// Pole przechowujące konfiguracje
         /// </summary>
         ConfigClient _config = new ConfigClient();
-        
+        /// <summary>
+        /// Pole przechowujące nazwę klienta
+        /// </summary>
+        private string _nazwa;
+
         public RabbitClient(ConfigClient config)
         {
             this._config = config;
+            _nazwa = "Klient1";
         }
 
         /// <summary>
         /// Metoda uruchamiająca prace klienta
-        /// </summary
+        /// </summary>
         public void KlientStart()
         {
             if (!flagIsRuning)
             {
                 thread = new Thread(() => CreateClient());
                 thread.Start();
+                string txtLog = "[" + DateTime.Now.ToString() + "] Uruchomienie klienta";
+                WriteInFile(_nazwa.ToString(), txtLog);
                 flagStop = false;
             }
         }
 
         /// <summary>
         /// Uruchomienie procesu zatrzymywania klienta
-        /// </summary
+        /// </summary>
         public void KlientStop()
         {
             flagStop = true;
@@ -64,7 +71,7 @@ namespace Aplikacja_Kliencka
 
         /// <summary>
         /// Metoda tworzaca polaczenie miedzy klientam a serwisem
-        /// </summary
+        /// </summary>
         private void CreateClient()
         {
             var factory = new ConnectionFactory() { 
@@ -91,6 +98,11 @@ namespace Aplikacja_Kliencka
                             if (flagStop) break;
                         }
                         flagIsRuning = false;
+                        //Wpisanie informacji do logu
+                        {
+                            string txtLog = "[" + DateTime.Now.ToString() + "] Koniec polaczenia z serwisem kolejkowania";
+                            WriteInFile(_nazwa.ToString(), txtLog);
+                        }
                     }
 
                 }
@@ -134,13 +146,29 @@ namespace Aplikacja_Kliencka
             //Odbieranie wiadomości
             var body = e.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
-            
+
+            //Wpisanie informacji do logu
+            {
+                string txtLog = "[" + DateTime.Now.ToString() + "] Pobranie wiadomości";
+                WriteInFile(_nazwa.ToString(), txtLog);
+            }
+
             //Podzielenie wiadomosci na parametry
             string[] param = message.Split(new char[] { ' ' });
             List<string> paramList = param.ToList();
             try
             {
+                //Wpisanie informacji do logu
+                {
+                    string txtLog = "[" + DateTime.Now.ToString() + "] Uruchomienie Obliczen, Argumenty(" + message + ")";
+                    WriteInFile(_nazwa.ToString(), txtLog);
+                }
                 DoWork(paramList);
+                //Wpisanie informacji do logu
+                {
+                    string txtLog = "[" + DateTime.Now.ToString() + "] Koniec Obliczeń";
+                    WriteInFile(_nazwa.ToString(), txtLog);
+                }
             }
             catch(Exception ex)
             {
@@ -176,6 +204,19 @@ namespace Aplikacja_Kliencka
                 throw new Exception(task + " Brak takiego zadania");
             }
             MessageBox.Show(res);
+        }
+
+        /// <summary>
+        /// Metoda tworząca log
+        /// </summary>
+        private void WriteInFile(string file, string txt)
+        {
+            file += ".txt";
+            //if (!File.Exists(file)) File.Create(file);
+            using (StreamWriter sw = File.AppendText(file))
+            {
+                sw.WriteLine(txt);
+            }
         }
     }
 }
