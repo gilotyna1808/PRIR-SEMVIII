@@ -30,6 +30,15 @@ namespace Aplikacja_Kliencka
         /// Flaga zatrzymania pracy klienta
         /// </summary
         private bool flagStop = true;
+        /// <summary>
+        /// Pole przechowujące konfiguracje
+        /// </summary>
+        ConfigClient _config = new ConfigClient();
+        
+        public RabbitClient(ConfigClient config)
+        {
+            this._config = config;
+        }
 
         /// <summary>
         /// Metoda uruchamiająca prace klienta
@@ -58,10 +67,14 @@ namespace Aplikacja_Kliencka
         /// </summary
         private void CreateClient()
         {
-            var factory = new ConnectionFactory() { HostName="localhost"};
+            var factory = new ConnectionFactory() { 
+                HostName = _config.RabitMQ_HostName,
+                UserName = _config.RabitMQ_UserName,
+                Password = _config.RabitMQ_Password,
+                Port = _config.RabitMQ_Port,
+            };
             try
             {
-                string queueName = "test1";
                 flagIsRuning = true;
                 using (var connection = factory.CreateConnection())
                 {
@@ -71,7 +84,7 @@ namespace Aplikacja_Kliencka
                         channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: true);
                         var consumer = new EventingBasicConsumer(channel);
                         consumer.Received += Consumer_Received;
-                        channel.BasicConsume(queue: queueName, autoAck: false, consumer: consumer);
+                        channel.BasicConsume(queue: _config.RabitMQ_QueueRecive, autoAck: false, consumer: consumer);
                         while (!flagStop)
                         {
                             semaphore.WaitOne(-1, true);

@@ -22,3 +22,5 @@ C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ref\Aplikacja_Kliencka.dll
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\Aplikacja_Kliencka.pdb
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\Aplikacja_Kliencka.genruntimeconfig.cache
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigWindow.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigWindow.baml
