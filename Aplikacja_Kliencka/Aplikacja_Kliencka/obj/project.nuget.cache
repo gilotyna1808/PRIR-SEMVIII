@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hwILH4sjap7l0p9xomG0a9sAy5qvEkuJ34zd8tzuWdfqpoLNskcTDTihnHHzv2KKly8/umtswbHugihH6eaw8A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daniel\\Documents\\GitHub\\PRIR\\PRIR-SEMVIII\\Aplikacja_Kliencka\\Aplikacja_Kliencka\\Aplikacja_Kliencka.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniel\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\Daniel\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Daniel\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
