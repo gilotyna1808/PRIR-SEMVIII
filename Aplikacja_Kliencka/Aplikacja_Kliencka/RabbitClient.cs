@@ -40,6 +40,7 @@ namespace Aplikacja_Kliencka
             {
                 thread = new Thread(() => CreateClient());
                 thread.Start();
+                flagStop = false;
             }
         }
 
@@ -120,10 +121,48 @@ namespace Aplikacja_Kliencka
             //Odbieranie wiadomości
             var body = e.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
-            MessageBox.Show(message);
+            
+            //Podzielenie wiadomosci na parametry
+            string[] param = message.Split(new char[] { ' ' });
+            List<string> paramList = param.ToList();
+            try
+            {
+                DoWork(paramList);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            //Potwierdzenie wykonania operacji do kolejki
+            ((EventingBasicConsumer)sender).Model.BasicAck(e.DeliveryTag, false);
 
             //Ustawienie stanu gotowości na kolejne zadanie
             semaphore.Set();
+        }
+
+        private void DoWork(List<String> param)
+        {
+            if (param.Count < 1)
+            {
+                throw new Exception("Nie przekazano parametrow");
+            }
+            string task = param[0];
+            string res;
+            if (task == "Fibonacci")
+            {
+                Fibonacci_Task work = new Fibonacci_Task();
+                res = work.Calculate(param);
+            }else if(task == "Prime")
+            {
+                IsPrimeTask work = new IsPrimeTask();
+                res = work.Calculate(param);
+            }
+            else
+            {
+                throw new Exception(task + " Brak takiego zadania");
+            }
+            MessageBox.Show(res);
         }
     }
 }

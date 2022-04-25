@@ -30,7 +30,7 @@ namespace Aplikacja_Kliencka
         {
             RabbitClient rabbit = new RabbitClient();
             rabbit.KlientStart();
-            Thread.Sleep(10000);
+            Thread.Sleep(3000);
             rabbit.KlientStop();
         }
     }
