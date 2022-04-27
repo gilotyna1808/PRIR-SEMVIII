@@ -164,11 +164,11 @@ namespace Aplikacja_Kliencka
                     WriteInFile(_name.ToString(), txtLog);
                 }
                 DoWork(paramList);
-                //Wpisanie informacji do logu
+                /*//Wpisanie informacji do logu
                 {
                     string txtLog = "[" + DateTime.Now.ToString() + "] Koniec Obliczeń";
                     WriteInFile(_name.ToString(), txtLog);
-                }
+                }*/
             }
             catch(Exception ex)
             {
@@ -189,23 +189,36 @@ namespace Aplikacja_Kliencka
                 throw new Exception("Nie przekazano parametrow");
             }
             string task = param[0];
-            string res;
             if (task == "Fibonacci")
             {
-                Fibonacci_Task work = new Fibonacci_Task();
-                res = work.Calculate(param);
-            }else if(task == "Prime")
+                ProcessStartInfo process = new ProcessStartInfo("java");
+                process.Arguments = "-jar Tools/Fibonacci.jar " + CreteArgumentsLine(param);
+                var proc = Process.Start(process);
+                proc.WaitForExit();
+                int kodWyjsciowy = proc.ExitCode;
+                //Wpisanie informacji do logu
+                {
+                    string txtLog = "[" + DateTime.Now.ToString() + "] Koniec Obliczeń, kod wyjsciowy programu" + kodWyjsciowy.ToString();
+                    WriteInFile(_name, txtLog);
+                }
+            }
+            else if(task == "Prime")
             {
-                IsPrimeTask work = new IsPrimeTask();
-                res = work.Calculate(param);
+                ProcessStartInfo process = new ProcessStartInfo("Tools/Prime.exe");
+                process.Arguments = CreteArgumentsLine(param);
+                var proc = Process.Start(process);
+                proc.WaitForExit();
+                int kodWyjsciowy = proc.ExitCode;
+                //Wpisanie informacji do logu
+                {
+                    string txtLog = "[" + DateTime.Now.ToString() + "] Koniec Obliczeń, kod wyjsciowy programu"+ kodWyjsciowy.ToString();
+                    WriteInFile(_name, txtLog);
+                }
             }
             else
             {
                 throw new Exception(task + " Brak takiego zadania");
             }
-            Debug.WriteLine(res);
-            Thread.Sleep(1000);
-            MessageBox.Show("Obliczenia na kliencie:" + _name + "\nWynik: " + res);
         }
 
         /// <summary>
@@ -227,6 +240,17 @@ namespace Aplikacja_Kliencka
         public string getName()
         {
             return this._name;
+        }
+
+        public string CreteArgumentsLine(List<string> param)
+        {
+            string res = "";
+            for(int i = 1; i < param.Count; i++)
+            {
+                if (i != 1) res += " ";
+                res += param[i];
+            }
+            return res;
         }
     }
 }

@@ -159,3 +159,7 @@ $[{ DateTime.Now.ToString()}] Uruchomienie klienta
 [27.04.2022 19:41:31] Pobranie wiadomości
 [27.04.2022 19:41:31] Uruchomienie Obliczen, Argumenty(Fibonacci 21)
 [27.04.2022 19:41:41] Koniec Obliczeń, kod wyjsciowy programu0
+[27.04.2022 19:47:38] Uruchomienie klienta
+[27.04.2022 19:47:39] Pobranie wiadomości
+[27.04.2022 19:47:39] Uruchomienie Obliczen, Argumenty(Fibonacci 21)
+[27.04.2022 19:47:49] Koniec Obliczeń, kod wyjsciowy programu0
