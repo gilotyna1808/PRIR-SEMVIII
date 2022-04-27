@@ -27,10 +27,14 @@ namespace Aplikacja_Kliencka
         /// </summary>
         ConfigClient conf = new ConfigClient();
 
+        Dashboard dashboard;
         public MainWindow()
         {
             InitializeComponent();
             LoadConfig();
+
+            dashboard = new Dashboard(conf);
+            ChangeBoardView(dashboard);
         }
 
         /// <summary>
@@ -58,15 +62,35 @@ namespace Aplikacja_Kliencka
         private void temp_Click(object sender, RoutedEventArgs e)
         {
             RabbitClient rabbit = new RabbitClient(conf);
-            rabbit.KlientStart();
+            rabbit.ClientStart();
             Thread.Sleep(3000);
-            rabbit.KlientStop();
+            rabbit.ClientStop();
         }
 
         private void btn_config_Click(object sender, RoutedEventArgs e)
         {
-            ConfigWindow configWindow = new ConfigWindow(ref conf);
-            configWindow.ShowDialog();
+            //ConfigWindow configWindow = new ConfigWindow(ref conf);
+            //configWindow.ShowDialog();
+            ConfigMainBoard configMainBoard = new ConfigMainBoard(ref conf);
+            ChangeBoardView(configMainBoard);
+        }
+
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+            RabbitClient rabbit = new RabbitClient(conf);
+            ClientView client = new ClientView(rabbit);
+            //grid_test.Children.Add(client);
+        }
+
+        private void btn_home_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeBoardView(dashboard);
+        }
+
+        private void ChangeBoardView(UserControl userControl)
+        {
+            grid_board.Children.Clear();
+            grid_board.Children.Add(userControl);
         }
     }
 }

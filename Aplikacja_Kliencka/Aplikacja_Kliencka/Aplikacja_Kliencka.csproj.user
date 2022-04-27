@@ -7,12 +7,48 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ClientView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfigClientBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfigConectionBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfigMainBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfigQueueBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ConfigWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ClientView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfigClientBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfigConectionBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfigMainBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfigQueueBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ConfigWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

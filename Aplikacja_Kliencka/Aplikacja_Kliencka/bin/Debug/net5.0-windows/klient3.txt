@@ -1,0 +1,28 @@
+[27.04.2022 17:40:17] Uruchomienie klienta
+[27.04.2022 17:41:34] Uruchomienie klienta
+[27.04.2022 17:41:34] Pobranie wiadomości
+[27.04.2022 17:41:34] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:41:48] Koniec Obliczeń
+[27.04.2022 17:42:13] Uruchomienie klienta
+[27.04.2022 17:42:13] Pobranie wiadomości
+[27.04.2022 17:42:13] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:42:21] Koniec Obliczeń
+[27.04.2022 17:42:21] Pobranie wiadomości
+[27.04.2022 17:42:21] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:42:23] Koniec Obliczeń
+[27.04.2022 17:42:45] Uruchomienie klienta
+[27.04.2022 17:42:45] Pobranie wiadomości
+[27.04.2022 17:42:45] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:43:16] Uruchomienie klienta
+[27.04.2022 17:43:16] Pobranie wiadomości
+[27.04.2022 17:43:16] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:43:33] Koniec Obliczeń
+[27.04.2022 17:43:33] Pobranie wiadomości
+[27.04.2022 17:43:33] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:43:37] Koniec Obliczeń
+[27.04.2022 17:44:02] Uruchomienie klienta
+[27.04.2022 17:44:02] Pobranie wiadomości
+[27.04.2022 17:44:02] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:44:55] Koniec Obliczeń
+[27.04.2022 17:44:56] Pobranie wiadomości
+[27.04.2022 17:44:56] Uruchomienie Obliczen, Argumenty(Fibonacci 20)

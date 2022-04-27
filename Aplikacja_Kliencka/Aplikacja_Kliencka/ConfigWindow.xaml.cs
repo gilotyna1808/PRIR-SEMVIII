@@ -34,7 +34,6 @@ namespace Aplikacja_Kliencka
             txt_vHostName.Text = _config.RabitMQ_VirualHost;
             txt_hostName.Text = _config.RabitMQ_HostName;
             txt_port.Text = _config.RabitMQ_Port.ToString();
-            txt_queue.Text = _config.RabitMQ_QueueRecive;
         }
 
         private void btn_save_Click(object sender, RoutedEventArgs e)
@@ -52,7 +51,6 @@ namespace Aplikacja_Kliencka
                 _config.RabitMQ_Password = rabbitMQOPass;
                 _config.RabitMQ_VirualHost = rabbitMQVHost;
                 _config.RabitMQ_HostName = rabbitMQHost;
-                _config.RabitMQ_QueueRecive = rabbitMQQueueR;
                 _config.RabitMQ_Port = int.Parse(rabitMQPort);
             }
             catch (Exception ex)

@@ -17,7 +17,7 @@ namespace Aplikacja_Kliencka
             int l = int.Parse(param[1]);
             
             if (l < 2) return "false";
-            for (int i = 2; i < l/2; i++)
+            for (int i = 2; i < (l/2)+1; i++)
             {
                 if (l % i == 0) return "false";
             }

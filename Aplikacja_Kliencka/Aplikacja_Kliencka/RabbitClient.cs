@@ -12,7 +12,7 @@ using System.Windows;
 
 namespace Aplikacja_Kliencka
 {
-    class RabbitClient
+    public class RabbitClient
     {
         /// <summary>
         /// Flaga działania klienta
@@ -37,25 +37,26 @@ namespace Aplikacja_Kliencka
         /// <summary>
         /// Pole przechowujące nazwę klienta
         /// </summary>
-        private string _nazwa;
+        private string _name;
 
-        public RabbitClient(ConfigClient config)
+        public RabbitClient(ConfigClient config, string name="")
         {
             this._config = config;
-            _nazwa = "Klient1";
+            _name = name;
         }
 
         /// <summary>
         /// Metoda uruchamiająca prace klienta
         /// </summary>
-        public void KlientStart()
+        public void ClientStart()
         {
+            Debug.WriteLine("Klient:{0} Start",_name);
             if (!flagIsRuning)
             {
                 thread = new Thread(() => CreateClient());
                 thread.Start();
                 string txtLog = "[" + DateTime.Now.ToString() + "] Uruchomienie klienta";
-                WriteInFile(_nazwa.ToString(), txtLog);
+                WriteInFile(_name.ToString(), txtLog);
                 flagStop = false;
             }
         }
@@ -63,7 +64,7 @@ namespace Aplikacja_Kliencka
         /// <summary>
         /// Uruchomienie procesu zatrzymywania klienta
         /// </summary>
-        public void KlientStop()
+        public void ClientStop()
         {
             flagStop = true;
             semaphore.Set();
@@ -91,7 +92,7 @@ namespace Aplikacja_Kliencka
                         channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: true);
                         var consumer = new EventingBasicConsumer(channel);
                         consumer.Received += Consumer_Received;
-                        channel.BasicConsume(queue: _config.RabitMQ_QueueRecive, autoAck: false, consumer: consumer);
+                        channel.BasicConsume(queue: _config.RabitMQ_QueueRecive[0], autoAck: false, consumer: consumer);
                         while (!flagStop)
                         {
                             semaphore.WaitOne(-1, true);
@@ -101,7 +102,7 @@ namespace Aplikacja_Kliencka
                         //Wpisanie informacji do logu
                         {
                             string txtLog = "[" + DateTime.Now.ToString() + "] Koniec polaczenia z serwisem kolejkowania";
-                            WriteInFile(_nazwa.ToString(), txtLog);
+                            WriteInFile(_name.ToString(), txtLog);
                         }
                     }
 
@@ -141,8 +142,7 @@ namespace Aplikacja_Kliencka
         private void Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
             //Powiadomienie, że zaczęto operacje na wiadomości
-            semaphore.WaitOne(-1, true);
-
+            Debug.WriteLine($"Klient: {_name} Pobranie wiadomosci");
             //Odbieranie wiadomości
             var body = e.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
@@ -150,7 +150,7 @@ namespace Aplikacja_Kliencka
             //Wpisanie informacji do logu
             {
                 string txtLog = "[" + DateTime.Now.ToString() + "] Pobranie wiadomości";
-                WriteInFile(_nazwa.ToString(), txtLog);
+                WriteInFile(_name.ToString(), txtLog);
             }
 
             //Podzielenie wiadomosci na parametry
@@ -161,13 +161,13 @@ namespace Aplikacja_Kliencka
                 //Wpisanie informacji do logu
                 {
                     string txtLog = "[" + DateTime.Now.ToString() + "] Uruchomienie Obliczen, Argumenty(" + message + ")";
-                    WriteInFile(_nazwa.ToString(), txtLog);
+                    WriteInFile(_name.ToString(), txtLog);
                 }
                 DoWork(paramList);
                 //Wpisanie informacji do logu
                 {
                     string txtLog = "[" + DateTime.Now.ToString() + "] Koniec Obliczeń";
-                    WriteInFile(_nazwa.ToString(), txtLog);
+                    WriteInFile(_name.ToString(), txtLog);
                 }
             }
             catch(Exception ex)
@@ -203,7 +203,9 @@ namespace Aplikacja_Kliencka
             {
                 throw new Exception(task + " Brak takiego zadania");
             }
-            MessageBox.Show(res);
+            Debug.WriteLine(res);
+            Thread.Sleep(1000);
+            MessageBox.Show("Obliczenia na kliencie:" + _name + "\nWynik: " + res);
         }
 
         /// <summary>
@@ -217,6 +219,14 @@ namespace Aplikacja_Kliencka
             {
                 sw.WriteLine(txt);
             }
+        }
+
+        /// <summary>
+        /// Getter pobierający nazwe klienta
+        /// </summary
+        public string getName()
+        {
+            return this._name;
         }
     }
 }

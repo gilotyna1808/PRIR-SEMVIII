@@ -1,0 +1,1 @@
+Rozpoczecie obliczenWartosc 20 liczby w ciagu fibonaciego jest równa: 4181

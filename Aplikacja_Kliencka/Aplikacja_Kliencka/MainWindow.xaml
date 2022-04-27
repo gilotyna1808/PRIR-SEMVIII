@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aplikacja_Kliencka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Zarzadzanie rozproszonymi obliczeniami-Klient" Height="450" Width="800"
+        MinHeight="500" MinWidth="800">
     <Grid>
-        <Button x:Name="temp" Content="TEST" HorizontalAlignment="Left" Height="145" Margin="198,229,0,0" VerticalAlignment="Top" Width="378" Click="temp_Click"/>
-        <Button x:Name="btn_config" Content="Config" HorizontalAlignment="Left" Height="113" Margin="665,16,0,0" VerticalAlignment="Top" Width="113" Click="btn_config_Click"/>
+        <Grid x:Name="grid_menu" Height="50" MinHeight="50" VerticalAlignment="Bottom" Background="#FF0CFF00">
+            <Button x:Name="btn_home" Content="Home" HorizontalAlignment="Left" Margin="0,0,0,0" Width="125" BorderBrush="Red" Background="Red" Click="btn_home_Click"/>
+            <Button x:Name="btn_config" Content="Config" HorizontalAlignment="Right" Margin="0,0,0,0" Width="125" BorderBrush="#FFFFA200" Background="#FFFFA200" Click="btn_config_Click"/>
+        </Grid>
+        <Grid x:Name="grid_board" Background="#FF1F08FF" Margin="0,0,0,50" MinHeight="400"/>
     </Grid>
 </Window>

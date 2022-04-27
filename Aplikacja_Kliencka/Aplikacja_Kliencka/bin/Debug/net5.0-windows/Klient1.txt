@@ -21,3 +21,141 @@
 [25.04.2022 17:30:51] Pobranie wiadomości
 [25.04.2022 17:30:51] Uruchomienie Obliczen, Argumenty(Primes 5)
 [25.04.2022 17:30:53] Koniec polaczenia z serwisem kolejkowania
+[26.04.2022 15:22:55] Uruchomienie klienta
+[26.04.2022 15:23:32] Uruchomienie klienta
+[26.04.2022 15:25:51] Uruchomienie klienta
+[26.04.2022 15:27:05] Uruchomienie klienta
+[26.04.2022 15:28:19] Uruchomienie klienta
+[26.04.2022 15:29:19] Uruchomienie klienta
+[26.04.2022 15:29:49] Uruchomienie klienta
+[26.04.2022 15:31:16] Uruchomienie klienta
+[26.04.2022 15:31:16] Pobranie wiadomości
+[26.04.2022 15:31:16] Uruchomienie Obliczen, Argumenty(Prime 5)
+[26.04.2022 15:31:16] Koniec Obliczeń
+[26.04.2022 15:38:34] Uruchomienie klienta
+[26.04.2022 15:38:47] Pobranie wiadomości
+[26.04.2022 15:38:47] Uruchomienie Obliczen, Argumenty(Prime 5)
+[26.04.2022 15:38:47] Koniec Obliczeń
+[26.04.2022 15:38:50] Pobranie wiadomości
+[26.04.2022 15:38:50] Uruchomienie Obliczen, Argumenty(Prime 8)
+[26.04.2022 15:38:50] Koniec Obliczeń
+[26.04.2022 15:38:56] Koniec polaczenia z serwisem kolejkowania
+[26.04.2022 15:39:16] Uruchomienie klienta
+[26.04.2022 15:39:16] Pobranie wiadomości
+[26.04.2022 15:39:16] Uruchomienie Obliczen, Argumenty(Prime 4)
+[26.04.2022 15:39:16] Koniec Obliczeń
+[26.04.2022 15:39:16] Pobranie wiadomości
+[26.04.2022 15:39:16] Uruchomienie Obliczen, Argumenty(Prime 2)
+[26.04.2022 15:39:16] Koniec Obliczeń
+[26.04.2022 15:39:16] Pobranie wiadomości
+[26.04.2022 15:39:16] Uruchomienie Obliczen, Argumenty(Prime 7)
+[26.04.2022 15:39:16] Koniec Obliczeń
+[26.04.2022 15:39:23] Pobranie wiadomości
+[26.04.2022 15:39:23] Uruchomienie Obliczen, Argumenty(Prime 4)
+[26.04.2022 15:39:23] Koniec Obliczeń
+[26.04.2022 15:39:30] Pobranie wiadomości
+[26.04.2022 15:39:30] Uruchomienie Obliczen, Argumenty(Prime 8)
+[26.04.2022 15:39:30] Koniec Obliczeń
+[26.04.2022 15:39:33] Pobranie wiadomości
+[26.04.2022 15:39:33] Uruchomienie Obliczen, Argumenty(Prime 2)
+[26.04.2022 15:39:33] Koniec Obliczeń
+[26.04.2022 15:39:37] Pobranie wiadomości
+[26.04.2022 15:39:37] Uruchomienie Obliczen, Argumenty(Prime 4)
+[26.04.2022 15:39:37] Koniec Obliczeń
+[26.04.2022 15:40:10] Uruchomienie klienta
+[26.04.2022 15:40:12] Pobranie wiadomości
+[26.04.2022 15:40:12] Uruchomienie Obliczen, Argumenty(Prime 4)
+[26.04.2022 15:40:12] Koniec Obliczeń
+[26.04.2022 15:40:15] Pobranie wiadomości
+[26.04.2022 15:40:15] Uruchomienie Obliczen, Argumenty(Prime 5)
+[26.04.2022 15:40:15] Koniec Obliczeń
+[26.04.2022 15:40:19] Pobranie wiadomości
+[26.04.2022 15:40:19] Uruchomienie Obliczen, Argumenty(Prime 2)
+[26.04.2022 15:40:19] Koniec Obliczeń
+[26.04.2022 15:40:22] Pobranie wiadomości
+[26.04.2022 15:40:22] Uruchomienie Obliczen, Argumenty(Prime 1)
+[26.04.2022 15:40:22] Koniec Obliczeń
+[26.04.2022 15:40:25] Pobranie wiadomości
+[26.04.2022 15:40:25] Uruchomienie Obliczen, Argumenty(Prime 0)
+[26.04.2022 15:40:25] Koniec Obliczeń
+[26.04.2022 15:40:29] Pobranie wiadomości
+[26.04.2022 15:40:29] Uruchomienie Obliczen, Argumenty(Prime -1)
+[26.04.2022 15:40:29] Koniec Obliczeń
+[26.04.2022 15:40:32] Pobranie wiadomości
+[26.04.2022 15:40:32] Uruchomienie Obliczen, Argumenty(Prime 999)
+[26.04.2022 15:40:32] Koniec Obliczeń
+[26.04.2022 15:40:37] Pobranie wiadomości
+[26.04.2022 15:40:37] Uruchomienie Obliczen, Argumenty(Prime 107)
+[26.04.2022 15:40:37] Koniec Obliczeń
+$[{ DateTime.Now.ToString()}] Uruchomienie klienta
+[27.04.2022 17:03:45] Uruchomienie klienta
+[27.04.2022 17:09:13] Uruchomienie klienta
+[27.04.2022 17:10:02] Uruchomienie klienta
+[27.04.2022 17:10:02] Pobranie wiadomości
+[27.04.2022 17:10:02] Uruchomienie Obliczen, Argumenty(Prime 5)
+[27.04.2022 17:10:07] Koniec Obliczeń
+[27.04.2022 17:10:07] Pobranie wiadomości
+[27.04.2022 17:10:07] Uruchomienie Obliczen, Argumenty(Prime 11)
+[27.04.2022 17:10:09] Koniec Obliczeń
+[27.04.2022 17:40:16] Uruchomienie klienta
+[27.04.2022 17:40:16] Pobranie wiadomości
+[27.04.2022 17:40:16] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:40:48] Koniec Obliczeń
+[27.04.2022 17:41:35] Uruchomienie klienta
+[27.04.2022 17:41:35] Pobranie wiadomości
+[27.04.2022 17:41:35] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:41:48] Koniec Obliczeń
+[27.04.2022 17:42:13] Uruchomienie klienta
+[27.04.2022 17:42:13] Pobranie wiadomości
+[27.04.2022 17:42:13] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:42:22] Koniec Obliczeń
+[27.04.2022 17:42:44] Uruchomienie klienta
+[27.04.2022 17:42:44] Pobranie wiadomości
+[27.04.2022 17:42:44] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:42:50] Koniec Obliczeń
+[27.04.2022 17:42:50] Pobranie wiadomości
+[27.04.2022 17:42:50] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:43:13] Uruchomienie klienta
+[27.04.2022 17:43:13] Pobranie wiadomości
+[27.04.2022 17:43:13] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:43:34] Koniec Obliczeń
+[27.04.2022 17:44:01] Uruchomienie klienta
+[27.04.2022 17:44:01] Pobranie wiadomości
+[27.04.2022 17:44:01] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:44:56] Koniec polaczenia z serwisem kolejkowania
+[27.04.2022 17:44:56] Koniec Obliczeń
+[27.04.2022 17:45:09] Uruchomienie klienta
+[27.04.2022 17:45:09] Pobranie wiadomości
+[27.04.2022 17:45:09] Uruchomienie Obliczen, Argumenty(Fibonacci 20)
+[27.04.2022 17:45:12] Koniec Obliczeń
+[27.04.2022 17:45:12] Koniec polaczenia z serwisem kolejkowania
+[27.04.2022 18:35:52] Uruchomienie klienta
+[27.04.2022 18:36:02] Pobranie wiadomości
+[27.04.2022 18:36:02] Uruchomienie Obliczen, Argumenty(Prime 3)
+[27.04.2022 18:36:02] Uruchomienie Programu Argumenty(3)
+[27.04.2022 18:36:12] Koniec Obliczeń, kod wyjsciowy programu0
+[27.04.2022 18:36:12] Koniec Obliczeń
+[27.04.2022 19:10:05] Uruchomienie klienta
+[27.04.2022 19:10:21] Pobranie wiadomości
+[27.04.2022 19:10:21] Uruchomienie Obliczen, Argumenty(Fibonacci 15)
+[27.04.2022 19:10:35] Uruchomienie klienta
+[27.04.2022 19:10:40] Pobranie wiadomości
+[27.04.2022 19:10:40] Uruchomienie Obliczen, Argumenty(Fibonacci 15)
+[27.04.2022 19:14:44] Uruchomienie klienta
+[27.04.2022 19:14:51] Pobranie wiadomości
+[27.04.2022 19:14:51] Uruchomienie Obliczen, Argumenty(Fibonacci 15)
+[27.04.2022 19:14:51] Koniec Obliczeń, kod wyjsciowy programu1
+[27.04.2022 19:17:29] Uruchomienie klienta
+[27.04.2022 19:17:37] Pobranie wiadomości
+[27.04.2022 19:17:37] Uruchomienie Obliczen, Argumenty(Fibonacci 15)
+[27.04.2022 19:18:14] Koniec Obliczeń, kod wyjsciowy programu0
+[27.04.2022 19:36:26] Uruchomienie klienta
+[27.04.2022 19:37:36] Pobranie wiadomości
+[27.04.2022 19:37:36] Uruchomienie Obliczen, Argumenty(Prime 177103)
+[27.04.2022 19:37:46] Koniec Obliczeń, kod wyjsciowy programu0
+[27.04.2022 19:38:20] Pobranie wiadomości
+[27.04.2022 19:38:20] Uruchomienie Obliczen, Argumenty(Prime 177103)
+[27.04.2022 19:38:30] Koniec Obliczeń, kod wyjsciowy programu0
+[27.04.2022 19:41:31] Pobranie wiadomości
+[27.04.2022 19:41:31] Uruchomienie Obliczen, Argumenty(Fibonacci 21)
+[27.04.2022 19:41:41] Koniec Obliczeń, kod wyjsciowy programu0

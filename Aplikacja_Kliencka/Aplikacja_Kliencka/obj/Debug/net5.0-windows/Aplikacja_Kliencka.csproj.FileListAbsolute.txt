@@ -24,3 +24,15 @@ C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\Aplikacja_Kliencka.genruntimeconfig.cache
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigWindow.g.cs
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigWindow.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ClientView.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ClientView.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\Dashboard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\Dashboard.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigMainBoard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigMainBoard.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigConectionBoard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigConectionBoard.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigQueueBoard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigQueueBoard.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigClientBoard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigClientBoard.baml

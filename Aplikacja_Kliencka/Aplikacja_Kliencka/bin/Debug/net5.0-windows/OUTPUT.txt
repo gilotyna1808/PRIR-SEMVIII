@@ -1,0 +1,1 @@
+Rozpoczecie obliczenWartosc 21 liczby w ciagu fibonaciego jest równa: 6765

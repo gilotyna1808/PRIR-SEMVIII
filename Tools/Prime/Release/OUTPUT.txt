@@ -1,0 +1,2 @@
+Rozpoczecie obliczen
+2: Jest liczba pierwsza

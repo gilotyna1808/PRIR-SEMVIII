@@ -1,0 +1,27 @@
+[27.04.2022 16:36:10] Uruchomienie klienta
+[27.04.2022 17:09:13] Uruchomienie klienta
+[27.04.2022 17:10:02] Uruchomienie klienta
+[27.04.2022 17:10:02] Pobranie wiadomości
+[27.04.2022 17:10:02] Uruchomienie Obliczen, Argumenty(Prime 7)
+[27.04.2022 17:10:07] Koniec Obliczeń
+[27.04.2022 17:40:16] Uruchomienie klienta
+[27.04.2022 17:40:16] Pobranie wiadomości
+[27.04.2022 17:40:16] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:40:49] Koniec Obliczeń
+[27.04.2022 17:41:34] Uruchomienie klienta
+[27.04.2022 17:41:35] Pobranie wiadomości
+[27.04.2022 17:41:35] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:41:47] Koniec Obliczeń
+[27.04.2022 17:43:15] Uruchomienie klienta
+[27.04.2022 17:43:15] Pobranie wiadomości
+[27.04.2022 17:43:15] Uruchomienie Obliczen, Argumenty(Prime 107)
+[27.04.2022 17:43:32] Koniec Obliczeń
+[27.04.2022 17:43:32] Pobranie wiadomości
+[27.04.2022 17:43:32] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:43:37] Koniec Obliczeń
+[27.04.2022 17:44:02] Uruchomienie klienta
+[27.04.2022 17:44:02] Pobranie wiadomości
+[27.04.2022 17:44:02] Uruchomienie Obliczen, Argumenty(Prime 207)
+[27.04.2022 17:44:55] Koniec Obliczeń
+[27.04.2022 17:45:09] Uruchomienie klienta
+[27.04.2022 17:45:12] Koniec polaczenia z serwisem kolejkowania
