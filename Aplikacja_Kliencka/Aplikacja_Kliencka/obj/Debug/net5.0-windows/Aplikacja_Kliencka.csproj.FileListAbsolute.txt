@@ -40,3 +40,6 @@ C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ConfigTask.baml
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ClientWindow.g.cs
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\ClientWindow.baml
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\WelcomeBoard.g.cs
+C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\obj\Debug\net5.0-windows\WelcomeBoard.baml

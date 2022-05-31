@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Daniel\Documents\GitHub\PRIR\PRIR-SEMVIII\Aplikacja_Kliencka\Aplikacja_Kliencka\App.xaml
-10570445212
+11-482944480
 
-191926337629
-19434952108
-ClientView.xaml;ClientWindow.xaml;ConfigClientBoard.xaml;ConfigConectionBoard.xaml;ConfigMainBoard.xaml;ConfigQueueBoard.xaml;ConfigTask.xaml;ConfigWindow.xaml;Dashboard.xaml;MainWindow.xaml;
+20707145273
+204-2107477261
+ClientView.xaml;ClientWindow.xaml;ConfigClientBoard.xaml;ConfigConectionBoard.xaml;ConfigMainBoard.xaml;ConfigQueueBoard.xaml;ConfigTask.xaml;ConfigWindow.xaml;Dashboard.xaml;MainWindow.xaml;WelcomeBoard.xaml;
 
-True
+False
 

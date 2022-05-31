@@ -287,7 +287,7 @@ namespace Aplikacja_Kliencka
                     using (var channel = connection.CreateModel())
                     {
                         if (blod != "" && blod!="0") stan = StanZadania.ZakonczonoNiePowodzeniem;
-                        string message = msg + " " + ConfigClient.getStan(stan) + blod;
+                        string message = msg + " " + ConfigClient.getStan(stan)+" " + blod;
                         var body = Encoding.UTF8.GetBytes(message);
                         channel.BasicPublish(
                             exchange: "",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,15 +27,19 @@ namespace Aplikacja_Kliencka
         /// Pole przechowujące konfiguracje
         /// </summary>
         ConfigClient conf = new ConfigClient();
-
+        Button curButton = null;
         Dashboard dashboard;
+        WelcomeBoard welcomeBoard;
+        ConfigMainBoard configMainBoard =null;
+        bool configMainBoardClicked = false;
         public MainWindow()
         {
             InitializeComponent();
             LoadConfig();
 
             dashboard = new Dashboard(conf);
-            ChangeBoardView(dashboard);
+            welcomeBoard = new WelcomeBoard();
+            ChangeBoardView(welcomeBoard);
         }
 
         /// <summary>
@@ -67,14 +72,6 @@ namespace Aplikacja_Kliencka
             rabbit.ClientStop();
         }
 
-        private void btn_config_Click(object sender, RoutedEventArgs e)
-        {
-            //ConfigWindow configWindow = new ConfigWindow(ref conf);
-            //configWindow.ShowDialog();
-            ConfigMainBoard configMainBoard = new ConfigMainBoard(ref conf);
-            ChangeBoardView(configMainBoard);
-        }
-
         private void add_Click(object sender, RoutedEventArgs e)
         {
             RabbitClient rabbit = new RabbitClient(conf);
@@ -84,13 +81,132 @@ namespace Aplikacja_Kliencka
 
         private void btn_home_Click(object sender, RoutedEventArgs e)
         {
-            ChangeBoardView(dashboard);
+            lbl_heder_label.Content = "";
+            ico_heder_ico.Icon = IconChar.Home;
+            showConfigButtons(false);
+            ChangeBoardView(welcomeBoard);
         }
 
         private void ChangeBoardView(UserControl userControl)
         {
             grid_board.Children.Clear();
             grid_board.Children.Add(userControl);
+        }
+
+        private void btn_dashBoard_Click(object sender, RoutedEventArgs e)
+        {
+            ActivateButton(sender, Color.FromRgb(255,255,255));
+            showConfigButtons(false);
+            ChangeBoardView(dashboard);
+        }
+
+        private void btn_settings_Click(object sender, RoutedEventArgs e)
+        {
+            ActivateButton(sender, Color.FromRgb(255, 255, 255));
+            showConfigButtons();
+            if (configMainBoard == null)
+            {
+                configMainBoard = new ConfigMainBoard(ref conf, this);
+            }
+            ChangeBoardView(configMainBoard);
+        }
+        private void ActivateButton(object sender, Color color)
+        {
+            if (sender != null)
+            {
+                DeactivateButton();
+                curButton = (Button)sender;
+                curButton.Foreground = new SolidColorBrush(color);
+                curButton.BorderThickness = new Thickness(10, 0, 0, 0);
+                curButton.BorderBrush = new SolidColorBrush(color);
+                ChangeHeader(sender);
+            }
+        }
+
+        private void DeactivateButton()
+        {
+            if (curButton != null)
+            {
+                curButton.Foreground = Brushes.Chocolate;
+                curButton.BorderThickness = new Thickness(0, 0, 0, 0);
+                curButton.BorderBrush = Brushes.Chocolate;
+            }
+        }
+
+        private void ChangeHeader(Object sender)
+        {
+            if (sender != null)
+            {
+                var x = (Button)sender;
+                var s = (StackPanel)x.Content;
+                var ico = (IconBlock)s.Children[0];
+                var txt = (TextBlock)s.Children[1];
+
+                ico_heder_ico.Icon = ico.Icon;
+                lbl_heder_label.Content = txt.Text;
+            }
+        }
+
+        private void showConfigButtons(bool fromConfigButton=true)
+        {
+            if (!configMainBoardClicked && fromConfigButton)
+            {
+                btn_settings_con.Visibility = Visibility.Visible;
+                btn_settings_que.Visibility = Visibility.Visible;
+                btn_settings_cli.Visibility = Visibility.Visible;
+                btn_settings_task.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btn_settings_con.Visibility = Visibility.Collapsed;
+                btn_settings_que.Visibility = Visibility.Collapsed;
+                btn_settings_cli.Visibility = Visibility.Collapsed;
+                btn_settings_task.Visibility = Visibility.Collapsed;
+            }
+            if(configMainBoardClicked || fromConfigButton)
+            {
+                configMainBoardClicked = !configMainBoardClicked;
+            }
+        }
+
+        private void btn_settings_con_Click(object sender, RoutedEventArgs e)
+        {
+            if (configMainBoard == null)
+            {
+                configMainBoard = new ConfigMainBoard(ref conf, this);
+            }
+            configMainBoard.btn_clientConf_Click(sender, e);
+            ChangeBoardView(configMainBoard);
+        }
+
+        private void btn_settings_que_Click(object sender, RoutedEventArgs e)
+        {
+            if (configMainBoard == null)
+            {
+                configMainBoard = new ConfigMainBoard(ref conf, this);
+            }
+            configMainBoard.btn_queueConf_Click(sender, e);
+            ChangeBoardView(configMainBoard);
+        }
+
+        private void btn_settings_cli_Click(object sender, RoutedEventArgs e)
+        {
+            if (configMainBoard == null)
+            {
+                configMainBoard = new ConfigMainBoard(ref conf, this);
+            }
+            configMainBoard.btn_clientConf_Click(sender, e);
+            ChangeBoardView(configMainBoard);
+        }
+
+        private void btn_settings_task_Click(object sender, RoutedEventArgs e)
+        {
+            if (configMainBoard == null)
+            {
+                configMainBoard = new ConfigMainBoard(ref conf, this);
+            }
+            configMainBoard.btn_taskConf_Click(sender, e);
+            ChangeBoardView(configMainBoard);
         }
     }
 }

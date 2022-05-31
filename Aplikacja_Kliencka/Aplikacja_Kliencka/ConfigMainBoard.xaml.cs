@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,10 @@ namespace Aplikacja_Kliencka
     {
         ConfigClient _config;
         Dictionary<string, UserControl> userControls = new Dictionary<string, UserControl>();
-        public ConfigMainBoard(ref ConfigClient config)
+        Button curButton;
+        MainWindow _mainWindow;
+        string _mainWindowLabel;
+        public ConfigMainBoard(ref ConfigClient config, MainWindow mainWindow)
         {
             _config = config;
             InitializeComponent();
@@ -30,12 +34,14 @@ namespace Aplikacja_Kliencka
             userControls.Add("queue", new ConfigQueueBoard(_config));
             userControls.Add("client", new ConfigClientBoard(_config));
             userControls.Add("task", new ConfigTaskBoard(_config));
-            this.btn_connectionConf_Click();
+            _mainWindow = mainWindow;
+            _mainWindowLabel = mainWindow.lbl_heder_label.Content.ToString();
         }
 
-        private void btn_connectionConf_Click(object sender=null, RoutedEventArgs e=null)
+        public void btn_connectionConf_Click(object sender=null, RoutedEventArgs e=null)
         {
             bool keyExists = userControls.ContainsKey("conection");
+            ActivateButton(sender, Color.FromRgb(0, 0, 0));
             if (keyExists)
             {
                 ChangeConfigPage(userControls["conection"]);
@@ -45,7 +51,6 @@ namespace Aplikacja_Kliencka
                 userControls.Add("conection", new ConfigConectionBoard(_config));
                 ChangeConfigPage(userControls["conection"]);
             }
-            SetButtons(btn_connectionConf);
         }
 
         private void ChangeConfigPage(UserControl page)
@@ -82,9 +87,10 @@ namespace Aplikacja_Kliencka
             }
         }
 
-        private void btn_queueConf_Click(object sender, RoutedEventArgs e)
+        public void btn_queueConf_Click(object sender, RoutedEventArgs e)
         {
             bool keyExists = userControls.ContainsKey("queue");
+            ActivateButton(sender, Color.FromRgb(0, 0, 0));
             if (keyExists)
             {
                 ChangeConfigPage(userControls["queue"]);
@@ -94,7 +100,6 @@ namespace Aplikacja_Kliencka
                 userControls.Add("queue", new ConfigQueueBoard(_config));
                 ChangeConfigPage(userControls["queue"]);
             }
-            SetButtons(btn_queueConf);
         }
 
         private void btn_saveToFile_Click(object sender, RoutedEventArgs e)
@@ -103,9 +108,10 @@ namespace Aplikacja_Kliencka
             _config.ZapiszKonfiguracje();
         }
 
-        private void btn_clientConf_Click(object sender, RoutedEventArgs e)
+        public void btn_clientConf_Click(object sender, RoutedEventArgs e)
         {
             bool keyExists = userControls.ContainsKey("client");
+            ActivateButton(sender, Color.FromRgb(0, 0, 0));
             if (keyExists)
             {
                 ChangeConfigPage(userControls["client"]);
@@ -115,12 +121,12 @@ namespace Aplikacja_Kliencka
                 userControls.Add("client", new ConfigClientBoard(_config));
                 ChangeConfigPage(userControls["client"]);
             }
-            SetButtons(btn_clientConf);
         }
 
-        private void btn_taskConf_Click(object sender, RoutedEventArgs e)
+        public void btn_taskConf_Click(object sender, RoutedEventArgs e)
         {
             bool keyExists = userControls.ContainsKey("task");
+            ActivateButton(sender, Color.FromRgb(0,0,0));
             if (keyExists)
             {
                 ChangeConfigPage(userControls["task"]);
@@ -130,16 +136,43 @@ namespace Aplikacja_Kliencka
                 userControls.Add("task", new ConfigClientBoard(_config));
                 ChangeConfigPage(userControls["task"]);
             }
-            SetButtons(btn_clientConf);
         }
 
-        private void SetButtons(Button activeButton)
+        private void ActivateButton(object sender, Color color)
         {
-            btn_queueConf.IsEnabled = true;
-            btn_clientConf.IsEnabled = true;
-            btn_connectionConf.IsEnabled = true;
-            activeButton.IsEnabled = false;
-            
+            if (sender != null)
+            {
+                DeactivateButton();
+                curButton = (Button)sender;
+                curButton.Foreground = new SolidColorBrush(color);
+                curButton.BorderThickness = new Thickness(0, 0, 0, 5);
+                curButton.BorderBrush = new SolidColorBrush(color);
+                ChangeHeader(sender);
+            }
+        }
+
+        private void DeactivateButton()
+        {
+            if (curButton != null)
+            {
+                curButton.Foreground = Brushes.White;
+                curButton.BorderThickness = new Thickness(0, 0, 0, 0);
+                curButton.BorderBrush = Brushes.White;
+            }
+        }
+
+        private void ChangeHeader(Object sender)
+        {
+            if (sender != null)
+            {
+                var x = (Button)sender;
+                var s = (StackPanel)x.Content;
+                var ico = (IconBlock)s.Children[0];
+                var txt = (TextBlock)s.Children[1];
+
+                _mainWindow.ico_heder_ico.Icon = ico.Icon;
+                _mainWindow.lbl_heder_label.Content = _mainWindowLabel + "---->" +txt.Text;
+            }
         }
     }
 }

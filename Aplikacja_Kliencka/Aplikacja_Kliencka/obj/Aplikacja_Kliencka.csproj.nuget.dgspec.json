@@ -43,6 +43,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "FontAwesome.Sharp": {
+              "target": "Package",
+              "version": "[5.15.4, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.2.1, )"

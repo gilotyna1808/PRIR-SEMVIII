@@ -239,7 +239,7 @@ namespace Aplikacja_Kliencka
                 case StanZadania.Koniec:
                     return "Koniec zadania";
                 case StanZadania.ZakonczonoPowodzeniem:
-                    return "zakonczono powodzeniem";
+                    return "powodzenie";
                 case StanZadania.ZakonczonoNiePowodzeniem:
                     return "niepowodzenie";
                 case StanZadania.Pobrano:
