@@ -163,3 +163,140 @@ $[{ DateTime.Now.ToString()}] Uruchomienie klienta
 [27.04.2022 19:47:39] Pobranie wiadomości
 [27.04.2022 19:47:39] Uruchomienie Obliczen, Argumenty(Fibonacci 21)
 [27.04.2022 19:47:49] Koniec Obliczeń, kod wyjsciowy programu0
+[28.04.2022 11:29:49] Uruchomienie klienta
+[28.04.2022 11:29:49] Pobranie wiadomości
+[28.04.2022 11:29:49] Uruchomienie Obliczen, Argumenty("Fibonacci 7")
+[28.04.2022 11:31:16] Pobranie wiadomości
+[28.04.2022 11:31:16] Uruchomienie Obliczen, Argumenty("Fibonacci 7")
+[28.04.2022 11:31:23] Koniec polaczenia z serwisem kolejkowania
+[28.04.2022 11:34:57] Uruchomienie klienta
+[28.04.2022 11:35:11] Pobranie wiadomości
+[28.04.2022 11:35:11] Uruchomienie Obliczen, Argumenty(Fibonacci 7)
+[28.04.2022 11:35:21] Koniec Obliczeń, kod wyjsciowy programu0
+[28.04.2022 11:35:28] Pobranie wiadomości
+[28.04.2022 11:35:28] Uruchomienie Obliczen, Argumenty(Fibonacci 7)
+[28.04.2022 11:35:38] Koniec Obliczeń, kod wyjsciowy programu0
+[28.04.2022 11:38:02] Pobranie wiadomości
+[28.04.2022 11:38:02] Uruchomienie Obliczen, Argumenty(Prime 9541)
+[28.04.2022 11:38:12] Koniec Obliczeń, kod wyjsciowy programu0
+[28.04.2022 11:59:26] Uruchomienie klienta
+[28.04.2022 11:59:26] Pobranie wiadomości
+[28.04.2022 11:59:26] Uruchomienie Obliczen, Argumenty(Prime 7)
+[28.04.2022 11:59:30] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[28.04.2022 11:59:31] Koniec polaczenia z serwisem kolejkowania
+[28.04.2022 12:05:34] Uruchomienie klienta
+[28.04.2022 12:05:34] Pobranie wiadomości
+[28.04.2022 12:05:34] Uruchomienie Obliczen, Argumenty(Prime 99)
+[28.04.2022 12:05:45] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 09:04:08] Uruchomienie klienta
+[31.05.2022 09:04:09] Pobranie wiadomości
+[31.05.2022 09:04:09] Uruchomienie Obliczen, Argumenty(Prime 7)
+[31.05.2022 09:04:19] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 09:04:19] Pobranie wiadomości
+[31.05.2022 09:04:19] Uruchomienie Obliczen, Argumenty(Prime 11)
+[31.05.2022 09:04:29] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 09:32:25] Uruchomienie klienta
+[31.05.2022 09:34:41] Uruchomienie klienta
+[31.05.2022 09:34:41] Pobranie wiadomości
+[31.05.2022 09:34:41] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:34:51] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 09:36:09] Uruchomienie klienta
+[31.05.2022 09:36:13] Pobranie wiadomości
+[31.05.2022 09:36:13] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:36:16] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:36:20] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 09:36:49] Uruchomienie klienta
+[31.05.2022 09:36:51] Pobranie wiadomości
+[31.05.2022 09:36:51] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:36:52] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:37:36] Uruchomienie klienta
+[31.05.2022 09:37:37] Pobranie wiadomości
+[31.05.2022 09:37:37] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:37:39] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:37:39] Koniec Obliczeń
+[31.05.2022 09:37:51] Pobranie wiadomości
+[31.05.2022 09:37:51] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:37:53] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:37:53] Koniec Obliczeń
+[31.05.2022 09:38:06] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 09:41:00] Uruchomienie klienta
+[31.05.2022 09:41:04] Pobranie wiadomości
+[31.05.2022 09:41:04] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:41:05] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:41:05] Koniec Obliczeń
+[31.05.2022 09:41:11] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 09:41:23] Uruchomienie klienta
+[31.05.2022 09:41:23] Pobranie wiadomości
+[31.05.2022 09:41:23] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:41:25] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:41:25] Koniec Obliczeń
+[31.05.2022 09:41:41] Pobranie wiadomości
+[31.05.2022 09:41:41] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:41:43] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:41:43] Koniec Obliczeń
+[31.05.2022 09:44:23] Uruchomienie klienta
+[31.05.2022 09:44:25] Pobranie wiadomości
+[31.05.2022 09:44:25] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:44:27] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:44:27] Koniec Obliczeń
+[31.05.2022 09:44:38] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 09:44:45] Uruchomienie klienta
+[31.05.2022 09:44:45] Pobranie wiadomości
+[31.05.2022 09:44:45] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:44:47] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:44:47] Koniec Obliczeń
+[31.05.2022 09:45:18] Uruchomienie klienta
+[31.05.2022 09:45:21] Pobranie wiadomości
+[31.05.2022 09:45:21] Uruchomienie Obliczen, Argumenty(Prime 4)
+[31.05.2022 09:45:22] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 09:45:22] Koniec Obliczeń
+[31.05.2022 09:45:25] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 12:53:39] Uruchomienie klienta
+[31.05.2022 12:53:52] Uruchomienie klienta
+[31.05.2022 12:54:12] Uruchomienie klienta
+[31.05.2022 12:54:24] Pobranie wiadomości
+[31.05.2022 12:54:24] Uruchomienie Obliczen, Argumenty(Prime 1)
+[31.05.2022 12:54:49] Uruchomienie klienta
+[31.05.2022 12:54:49] Pobranie wiadomości
+[31.05.2022 12:54:49] Uruchomienie Obliczen, Argumenty(Prime 1)
+[31.05.2022 12:55:28] Uruchomienie klienta
+[31.05.2022 12:55:30] Pobranie wiadomości
+[31.05.2022 12:55:30] Uruchomienie Obliczen, Argumenty(Prime 1)
+[31.05.2022 12:55:34] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 12:55:34] Koniec Obliczeń
+[31.05.2022 13:12:40] Uruchomienie klienta
+[31.05.2022 13:12:50] Pobranie wiadomości
+[31.05.2022 13:12:50] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:13:01] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:13:01] Koniec Obliczeń
+[31.05.2022 13:13:03] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 13:16:19] Uruchomienie klienta
+[31.05.2022 13:16:23] Pobranie wiadomości
+[31.05.2022 13:16:23] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:16:33] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:16:33] Koniec Obliczeń
+[31.05.2022 13:16:37] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 13:16:59] Uruchomienie klienta
+[31.05.2022 13:17:02] Pobranie wiadomości
+[31.05.2022 13:17:02] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:17:12] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:17:12] Koniec Obliczeń
+[31.05.2022 13:18:33] Uruchomienie klienta
+[31.05.2022 13:18:36] Pobranie wiadomości
+[31.05.2022 13:18:36] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:18:46] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:18:46] Koniec Obliczeń
+[31.05.2022 13:19:36] Uruchomienie klienta
+[31.05.2022 13:19:40] Pobranie wiadomości
+[31.05.2022 13:19:40] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:19:41] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[31.05.2022 13:19:41] Koniec Obliczeń
+[31.05.2022 13:19:51] Pobranie wiadomości
+[31.05.2022 13:19:51] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:20:01] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:20:01] Koniec Obliczeń
+[31.05.2022 13:22:12] Uruchomienie klienta
+[31.05.2022 13:22:16] Pobranie wiadomości
+[31.05.2022 13:22:16] Uruchomienie Obliczen, Argumenty(Prime 3)
+[31.05.2022 13:22:26] Koniec Obliczeń, kod wyjsciowy programu0
+[31.05.2022 13:22:26] Koniec Obliczeń

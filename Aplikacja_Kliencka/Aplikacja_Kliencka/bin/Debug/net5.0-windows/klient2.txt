@@ -25,3 +25,14 @@
 [27.04.2022 17:44:55] Koniec Obliczeń
 [27.04.2022 17:45:09] Uruchomienie klienta
 [27.04.2022 17:45:12] Koniec polaczenia z serwisem kolejkowania
+[28.04.2022 11:32:21] Uruchomienie klienta
+[28.04.2022 11:32:21] Pobranie wiadomości
+[28.04.2022 11:32:21] Uruchomienie Obliczen, Argumenty("Fibonacci 7")
+[28.04.2022 11:32:37] Pobranie wiadomości
+[28.04.2022 11:32:37] Uruchomienie Obliczen, Argumenty(Fibonacci 7)
+[28.04.2022 11:59:27] Uruchomienie klienta
+[28.04.2022 11:59:27] Pobranie wiadomości
+[28.04.2022 11:59:27] Uruchomienie Obliczen, Argumenty(Prime 99)
+[28.04.2022 11:59:29] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[28.04.2022 11:59:31] Koniec polaczenia z serwisem kolejkowania
+[31.05.2022 12:55:03] Uruchomienie klienta

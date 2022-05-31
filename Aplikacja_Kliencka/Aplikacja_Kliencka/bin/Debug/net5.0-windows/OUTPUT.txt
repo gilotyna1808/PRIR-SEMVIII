@@ -1,1 +1,2 @@
-Rozpoczecie obliczenWartosc 21 liczby w ciagu fibonaciego jest równa: 6765
+Rozpoczecie obliczen
+3: Jest liczba pierwsza

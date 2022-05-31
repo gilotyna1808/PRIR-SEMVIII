@@ -10,6 +10,9 @@
     <Compile Update="ClientView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ConfigClientBoard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -20,6 +23,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ConfigQueueBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfigTask.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ConfigWindow.xaml.cs">
@@ -33,6 +39,9 @@
     <Page Update="ClientView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ConfigClientBoard.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -43,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ConfigQueueBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfigTask.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ConfigWindow.xaml">

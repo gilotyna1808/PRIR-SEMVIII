@@ -29,6 +29,7 @@ namespace Aplikacja_Kliencka
             userControls.Add("conection", new ConfigConectionBoard(_config));
             userControls.Add("queue", new ConfigQueueBoard(_config));
             userControls.Add("client", new ConfigClientBoard(_config));
+            userControls.Add("task", new ConfigTaskBoard(_config));
             this.btn_connectionConf_Click();
         }
 
@@ -73,6 +74,12 @@ namespace Aplikacja_Kliencka
                 var card = (ConfigClientBoard)userControls["client"];
                 card.SaveChanges(ref _config);
             }
+            keyExists = userControls.ContainsKey("task");
+            if (keyExists)
+            {
+                var card = (ConfigTaskBoard)userControls["task"];
+                card.SaveChanges(ref _config);
+            }
         }
 
         private void btn_queueConf_Click(object sender, RoutedEventArgs e)
@@ -107,6 +114,21 @@ namespace Aplikacja_Kliencka
             {
                 userControls.Add("client", new ConfigClientBoard(_config));
                 ChangeConfigPage(userControls["client"]);
+            }
+            SetButtons(btn_clientConf);
+        }
+
+        private void btn_taskConf_Click(object sender, RoutedEventArgs e)
+        {
+            bool keyExists = userControls.ContainsKey("task");
+            if (keyExists)
+            {
+                ChangeConfigPage(userControls["task"]);
+            }
+            else
+            {
+                userControls.Add("task", new ConfigClientBoard(_config));
+                ChangeConfigPage(userControls["task"]);
             }
             SetButtons(btn_clientConf);
         }

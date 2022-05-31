@@ -23,7 +23,7 @@ int getIntFromArg(char* arg) {
         return -1; //Znaleziono bledny znak
     }
     if (lres < INT_MIN || lres > INT_MAX) {
-        return 1; //Podana wartosc nie miesci sie w zakresie inta
+        return -1; //Podana wartosc nie miesci sie w zakresie inta
     }
     int res = lres;
     return res;

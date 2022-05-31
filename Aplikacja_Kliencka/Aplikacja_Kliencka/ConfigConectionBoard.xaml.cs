@@ -25,6 +25,7 @@ namespace Aplikacja_Kliencka
         public string RabbitVHost { get; set; }
         public string RabbitHost { get; set; }
         public int RabbitPort { get; set; }
+        public string RabbitQueueSend { get; set; }
         public bool Changes { get; set; }
         public ConfigConectionBoard(ConfigClient config)
         {
@@ -35,6 +36,7 @@ namespace Aplikacja_Kliencka
             RabbitVHost = config.RabitMQ_VirualHost;
             RabbitHost = config.RabitMQ_HostName;
             RabbitPort = config.RabitMQ_Port;
+            RabbitQueueSend = config.RabitMQ_QueueSend;
             LoadTxtBox();
         }
 
@@ -45,6 +47,7 @@ namespace Aplikacja_Kliencka
             txt_vHostName.Text = RabbitVHost;
             txt_hostName.Text = RabbitHost;
             txt_port.Text = RabbitPort.ToString();
+            txt_queue_res.Text = RabbitQueueSend;
         }
 
         private void TextChanged(object sender, TextChangedEventArgs e)

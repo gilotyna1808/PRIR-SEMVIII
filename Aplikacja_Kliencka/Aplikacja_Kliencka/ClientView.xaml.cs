@@ -27,14 +27,33 @@ namespace Aplikacja_Kliencka
         /// </summary>
         RabbitClient _client;
 
-        bool buttonStart =true;
-        bool buttonStop =false;
-        bool flagStop = false;
+        /// <summary>
+        /// Pole przechowujące informacje o dostępności przycisku start
+        /// </summary>
+        private bool buttonStart = true;
+
+        /// <summary>
+        /// Pole przechowujące informacje o dostępności przycisku stop
+        /// </summary>
+        private bool buttonStop = false;
+
+        /// <summary>
+        /// Pole przechowujące informacje o zakonczeniu pracy wątka w tle
+        /// </summary>
+        private bool backgroudWorkEnd = true;
+
+        /// <summary>
+        /// Pole przechowujące informacje o zakończeniu pracy
+        /// </summary>
+        private bool flagStop = false;
+
+        /// <summary>
+        /// Pole przechowujące wątek działający w tle
+        /// </summary>
+        private Thread watekAktualizacjaStatusu = null;
 
         public ClientView(RabbitClient rabbitClient)
         {
-            InitializeComponent();
-
             //Inicjalizacja
             InitializeComponent();
 
@@ -44,6 +63,7 @@ namespace Aplikacja_Kliencka
             //Wypisanie infromacji w etykietach
             var clientName = "Klient: " + _client.getName();
             lbl_clientName.Content = clientName;
+            lbl_status.Content = ConfigClient.getStan(_client.getStan());
         }
 
         /// <summary>
@@ -56,11 +76,11 @@ namespace Aplikacja_Kliencka
             buttonStop = true;
             flagStop = false;
             KonfiguracjaPrzyciskow();
-            /*if (backgroudWorkEnd)
+            if (backgroudWorkEnd)
             {
                 watekAktualizacjaStatusu = new Thread(() => aktualizujStatus(2000));
                 watekAktualizacjaStatusu.Start();
-            }*/
+            }
         }
 
         /// <summary>
@@ -90,6 +110,48 @@ namespace Aplikacja_Kliencka
             else btn_start.Dispatcher.Invoke(() => btn_start.IsEnabled = buttonStart);
             if (uiAccessBtnStop) btn_stop.IsEnabled = buttonStop;
             else btn_stop.Dispatcher.Invoke(() => btn_stop.IsEnabled = buttonStop);
+        }
+
+        /// <summary>
+        /// Metoda wypisujaca informacje asynchronicznie
+        /// </summary>
+        private void aktualizujStatus(int time)
+        {
+            try
+            {
+                //Działaj dopóki flaga stop nie zostanie podniesiona
+                while (!flagStop)
+                {
+                    //Sprawdzenie dostępności do etykiety
+                    bool uiAccess = lbl_status.Dispatcher.CheckAccess();
+                    if (uiAccess) lbl_status.Content = ConfigClient.getStan(_client.getStan());
+                    else lbl_status.Dispatcher.Invoke(() => { lbl_status.Content = ConfigClient.getStan(_client.getStan()); });
+
+                    //Uspanie wątka na zadany czas
+                    Thread.Sleep(time);
+
+                    //Wykonaj jeżeli klient został zatrzymany
+                    if (_client.getStan() == StanZadania.Koniec)
+                    {
+                        buttonStart = true;
+                        buttonStop = false;
+                        flagStop = true;
+                        KonfiguracjaPrzyciskow();
+                        if (uiAccess) lbl_status.Content = ConfigClient.getStan(_client.getStan());
+                        else lbl_status.Dispatcher.Invoke(() => { lbl_status.Content = ConfigClient.getStan(_client.getStan()); });
+                    }
+                }
+
+            }
+            catch (ThreadInterruptedException ex)
+            {
+                Debug.WriteLine("Przewanie watku klientPodglad");
+            }
+            catch (Exception ex)
+            {
+
+            }
+            backgroudWorkEnd = true;
         }
     }
 }

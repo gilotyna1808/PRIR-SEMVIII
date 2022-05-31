@@ -17,5 +17,7 @@
         <TextBox x:Name="txt_hostName" Margin="310,200,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
         <Label Content="Port:" HorizontalAlignment="Left" Height="60" Margin="5,265,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center"/>
         <TextBox x:Name="txt_port" Margin="310,265,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
+        <Label Content="Kolejka z potwierdzeniami:" HorizontalAlignment="Left" Height="60" Margin="5,330,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txt_queue_res" Margin="310,330,4,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
     </Grid>
 </UserControl>
