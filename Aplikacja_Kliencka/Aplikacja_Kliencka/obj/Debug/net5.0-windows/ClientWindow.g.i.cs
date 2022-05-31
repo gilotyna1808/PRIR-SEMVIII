@@ -101,7 +101,7 @@ namespace Aplikacja_Kliencka {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Aplikacja_Kliencka;component/clientwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Aplikacja_Kliencka;V1.0.0.0;component/clientwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ClientWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
