@@ -300,3 +300,13 @@ $[{ DateTime.Now.ToString()}] Uruchomienie klienta
 [31.05.2022 13:22:16] Uruchomienie Obliczen, Argumenty(Prime 3)
 [31.05.2022 13:22:26] Koniec Obliczeń, kod wyjsciowy programu0
 [31.05.2022 13:22:26] Koniec Obliczeń
+[01.06.2022 07:32:07] Uruchomienie klienta
+[01.06.2022 07:32:14] Pobranie wiadomości
+[01.06.2022 07:32:14] Uruchomienie Obliczen, Argumenty(Prime 1)
+[01.06.2022 07:32:16] Koniec Obliczeń, kod wyjsciowy programu-1073741510
+[01.06.2022 07:32:16] Koniec Obliczeń
+[01.06.2022 07:34:38] Uruchomienie klienta
+[01.06.2022 07:34:44] Pobranie wiadomości
+[01.06.2022 07:34:44] Uruchomienie Obliczen, Argumenty(Prime 1)
+[01.06.2022 07:34:54] Koniec Obliczeń, kod wyjsciowy programu0
+[01.06.2022 07:34:54] Koniec Obliczeń

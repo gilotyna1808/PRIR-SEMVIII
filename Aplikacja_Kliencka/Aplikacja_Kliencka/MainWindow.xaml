@@ -17,69 +17,74 @@
                     </Button.Content>
                 </Button>
             </Grid>
-            <Button x:Name="btn_dashBoard" Height="60" Margin="0,140,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36" Click="btn_dashBoard_Click">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="300" Height="60">
-                        <fa:IconBlock Icon="TachometerAlt"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="PULPIT" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="0,140,0,0">
+            <Grid x:Name="grid_menu" Margin="0,0,0,0">
+                <Button x:Name="btn_dashBoard" Height="60" Margin="0,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36" Click="btn_dashBoard_Click">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="300" Height="60">
+                            <fa:IconBlock Icon="TachometerAlt"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="PULPIT" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
-            <Button x:Name="btn_view" Height="60" Margin="0,210,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="300" Height="60">
-                        <fa:IconBlock Icon="Eye"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="PODGLAD" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Button x:Name="btn_view" Height="60" Margin="0,70,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36" Click="btn_view_Click">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="300" Height="60">
+                            <fa:IconBlock Icon="Eye"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="PODGLAD" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
-            <Button x:Name="btn_settings" Height="60" Margin="0,280,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36" Click="btn_settings_Click">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="300" Height="60">
-                        <fa:IconBlock Icon="Cog"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="USTAWIENIA" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Grid x:Name="grid_views" Width="300" Margin="0,140,0,0" Height="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
-            <Button x:Name="btn_settings_con" Height="60" Margin="10,350,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_con_Click" Visibility="Collapsed">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="290" Height="60">
-                        <fa:IconBlock Icon="Link"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="POŁĄCZENIE" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Button x:Name="btn_settings" Height="60" Margin="0,140,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Chocolate" FontSize="36" Click="btn_settings_Click" Visibility="Visible">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="300" Height="60">
+                            <fa:IconBlock Icon="Cog"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="USTAWIENIA" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
-            <Button x:Name="btn_settings_que" Height="60" Margin="10,410,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_que_Click" Visibility="Collapsed">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="290" Height="60">
-                        <fa:IconBlock Icon="Cube"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="KOLEJKI" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Button x:Name="btn_settings_con" Height="60" Margin="10,350,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_con_Click" Visibility="Collapsed">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="290" Height="60">
+                            <fa:IconBlock Icon="Link"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="POŁĄCZENIE" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
-            <Button x:Name="btn_settings_cli" Height="60" Margin="10,470,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_cli_Click" Visibility="Collapsed">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="290" Height="60">
-                        <fa:IconBlock Icon="User"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="KLIENCI" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Button x:Name="btn_settings_que" Height="60" Margin="10,410,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_que_Click" Visibility="Collapsed">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="290" Height="60">
+                            <fa:IconBlock Icon="Cube"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="KOLEJKI" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
-            <Button x:Name="btn_settings_task" Height="60" Margin="10,530,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_task_Click" Visibility="Collapsed">
-                <Button.Content>
-                    <StackPanel Orientation="Horizontal" Width="290" Height="60">
-                        <fa:IconBlock Icon="PaperPlane"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBlock Text="KOMENDY" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+                <Button x:Name="btn_settings_cli" Height="60" Margin="10,470,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_cli_Click" Visibility="Collapsed">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="290" Height="60">
+                            <fa:IconBlock Icon="User"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="KLIENCI" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
 
+                <Button x:Name="btn_settings_task" Height="60" Margin="10,530,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" Click="btn_settings_task_Click" Visibility="Collapsed">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal" Width="290" Height="60">
+                            <fa:IconBlock Icon="PaperPlane"  FontSize="36" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="KOMENDY" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Grid>
+            </ScrollViewer>
         </Grid>
         <Grid Margin="300,0,0,0" Height="80" VerticalAlignment="Top" Background="#FF1B1A38">
             <fa:IconBlock x:Name="ico_heder_ico" Icon="Home" Foreground="Chocolate" FontSize="58" HorizontalAlignment="Left" Margin="20,0,0,0"/>

@@ -67,6 +67,13 @@ namespace Aplikacja_Kliencka
         }
 
         /// <summary>
+        /// Pobierz instancje klienta
+        /// </summary>
+        public RabbitClient getClient()
+        {
+            return this._client;
+        } 
+        /// <summary>
         /// Uruchom klienta
         /// </summary>
         private void btn_start_Click(object sender, RoutedEventArgs e)

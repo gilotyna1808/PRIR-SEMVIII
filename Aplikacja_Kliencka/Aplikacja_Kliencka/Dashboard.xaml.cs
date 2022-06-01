@@ -24,9 +24,11 @@ namespace Aplikacja_Kliencka
         List<ClientView> clientViews=new List<ClientView>();
         int maxNumOfClients = 0;
         int currentNumOfClients = 0;
-        public Dashboard(ConfigClient config)
+        MainWindow _mainWindow;
+        public Dashboard(ConfigClient config, MainWindow mainWindow)
         {
             _config = config;
+            _mainWindow = mainWindow;
             InitializeComponent();
 
             //Wpisanie informacji
@@ -41,6 +43,7 @@ namespace Aplikacja_Kliencka
             {
                 RabbitClient rabbitClient = new RabbitClient(_config, _config.ClientsNames[currentNumOfClients]);
                 ClientView tempView = new ClientView(rabbitClient);
+                _mainWindow.add_new_view(tempView);
                 add_new_view(tempView);
                 currentNumOfClients++;
             }

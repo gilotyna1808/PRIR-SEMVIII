@@ -125,7 +125,7 @@ namespace Aplikacja_Kliencka
                 {
                     sw.WriteLine("Nazwa klienta= " + _clientsNames[i]);
                 }
-                sw.WriteLine("Ilosc komend= " + _clientsCount);
+                sw.WriteLine("Ilosc komend= " + _tasksCount);
                 foreach(KeyValuePair<string,string> entry in _tasks)
                 {
                     sw.WriteLine("Nazwa komendy= " + entry.Key);
