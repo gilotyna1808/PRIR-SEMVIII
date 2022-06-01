@@ -86,6 +86,8 @@ namespace Aplikacja_Kliencka
             ico_heder_ico.Icon = IconChar.Home;
             showConfigButtons(false);
             ShowViewButton(false);
+            DeactivateButton();
+            DeactivateViewButton();
             ChangeBoardView(welcomeBoard);
         }
 
@@ -235,6 +237,15 @@ namespace Aplikacja_Kliencka
                 Grid.SetRow(button, i);
                 buttonsOfClientsViews.Add(button);
                 grid_views.Children.Add(button);
+            }
+            if (buttonsOfClientsViews.Count == 0)
+            {
+                var view = new ClientViewEmpty();
+                ChangeBoardView(view);
+            }
+            else
+            {
+                ChangeViewButton(buttonsOfClientsViews[0], null);
             }
             ShowViewButton();
         }

@@ -6,21 +6,19 @@
              xmlns:local="clr-namespace:Aplikacja_Kliencka"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="800">
-    <Grid Background="#FFFF00C5">
+    <Grid>
         <Button x:Name="btn_add" Content="Dodaj" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="100" Width="100" Click="btn_add_Click"/>
-        <Button x:Name="btn_config" Content="Konfiguracja" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Height="100" Width="100"/>
-        <Label x:Name="lbl_numberOfActiveClients" Content="Liczba aktywnych klientow:" Margin="120,10,120,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="50" FontSize="20"/>
-        <Label x:Name="lbl_maxNumberOfActiveClients" Content="Maksymalna liczba aktywnych klientow:" Margin="120,60,120,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="50" FontSize="20"/>
-        <Label Content="Dodaj" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="100" Height="30" HorizontalContentAlignment="Center"/>
-        <Label Content="Konfiguruj" Margin="0,115,10,0" VerticalAlignment="Top" Height="30" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Width="100"/>
+        <Label x:Name="lbl_numberOfActiveClients" Content="Liczba aktywnych klientow:" Margin="120,10,120,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="50" FontSize="20" Foreground="White"/>
+        <Label x:Name="lbl_maxNumberOfActiveClients" Content="Maksymalna liczba aktywnych klientow:" Margin="0,60,319,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="50" FontSize="20" Foreground="White" HorizontalAlignment="Right"/>
+        <Label Content="Dodaj" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="100" Height="30" HorizontalContentAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txt_add_x" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-380,115,0,0" Text="1" TextWrapping="Wrap" Height="30" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="125"/>
         <Button x:Name="btn_add_x" Content="Dodaj: 1" Height="30" Width="125" HorizontalAlignment="Center" Margin="-125,115,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_start_all" Content="Uruchom wszystkich" Height="30" Width="125" HorizontalAlignment="Center" Margin="130,115,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_stop_all" Content="Zatrzymaj wszystkich" Height="30" Width="125" HorizontalAlignment="Center" Margin="385,115,0,0" VerticalAlignment="Top"/>
-        <Label Content="Podgląd aktywnych klientów:" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Button x:Name="btn_start_all" Content="Uruchom wszystkich" Height="45" Width="125" HorizontalAlignment="right" Margin="664,10,10,0" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button x:Name="btn_stop_all" Content="Zatrzymaj wszystkich" Height="45" Width="125" HorizontalAlignment="Right" Margin="385,60,10,0" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Label Content="Podgląd aktywnych klientów:" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" />
         <ScrollViewer Margin="0,200,0,0" VerticalScrollBarVisibility="Auto">
             <Grid x:Name="grid_activeClientsView" Margin="0,0,0,0">
-            
+
             </Grid>
         </ScrollViewer>
     </Grid>

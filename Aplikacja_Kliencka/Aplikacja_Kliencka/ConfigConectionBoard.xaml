@@ -5,19 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Aplikacja_Kliencka"
              mc:Ignorable="d" 
-             d:DesignHeight="375" d:DesignWidth="800" Background="Red">
+             d:DesignHeight="375" d:DesignWidth="800">
     <Grid>
-        <Label Content="RabbitMQ User:" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <Label Content="RabbitMQ User:" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
         <TextBox x:Name="txt_userName" Margin="310,5,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextAlignment="Left" FontSize="20" TextChanged="TextChanged"/>
-        <Label Content="RabbitMQ Password:" HorizontalAlignment="Left"  Height="60" Margin="5,70,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20"/>
-        <TextBox x:Name="txt_password" Margin="310,70,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
-        <Label Content="RabbitMQ VHost:" HorizontalAlignment="Left"  Height="60" Margin="5,135,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <Label Content="RabbitMQ Password:" HorizontalAlignment="Left"  Height="60" Margin="5,70,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txt_password" Margin="310,70,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged" FontSize="20"/>
+        <Label Content="RabbitMQ VHost:" HorizontalAlignment="Left"  Height="60" Margin="5,135,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
         <TextBox x:Name="txt_vHostName" Margin="310,135,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
-        <Label Content="RabbitMQ Host:" HorizontalAlignment="Left" Height="60" Margin="5,200,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txt_hostName" Margin="310,200,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
-        <Label Content="Port:" HorizontalAlignment="Left" Height="60" Margin="5,265,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="txt_port" Margin="310,265,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
-        <Label Content="Kolejka z potwierdzeniami:" HorizontalAlignment="Left" Height="60" Margin="5,330,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center"/>
+        <Label Content="RabbitMQ Host:" HorizontalAlignment="Left" Height="60" Margin="5,200,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="txt_hostName" Margin="310,200,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged" FontSize="20"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Height="60" Margin="5,265,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="txt_port" Margin="310,265,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged" FontSize="20"/>
+        <Label Content="Kolejka z potwierdzeniami:" HorizontalAlignment="Left" Height="60" Margin="5,330,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txt_queue_res" Margin="310,330,4,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
     </Grid>
 </UserControl>

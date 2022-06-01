@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Aplikacja_Kliencka"
              mc:Ignorable="d" 
-             d:DesignHeight="375" d:DesignWidth="800" Background="#FF1700FF">
+             d:DesignHeight="375" d:DesignWidth="800">
     <Grid>
-        <Label Content="Ilość używanych kolejek:" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <Label Content="Ilość używanych kolejek:" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
         <TextBox x:Name="txt_queueCount" Margin="310,5,5,2" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextAlignment="Left" FontSize="20" TextChanged="txt_queueCount_TextChanged"/>
-        <Label Content="Nazwy używanych kolejek:" HorizontalAlignment="Left" Height="60" Margin="5,70,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <Label Content="Nazwy używanych kolejek:" HorizontalAlignment="Left" Height="60" Margin="5,70,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
         <ScrollViewer x:Name="scr_kolejka" VerticalScrollBarVisibility="Visible" Margin="0,135,0,5">
             <Grid x:Name="grid_queueNamesBoard" Margin="0,0,0,0"/>
         </ScrollViewer>

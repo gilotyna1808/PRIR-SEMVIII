@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Aplikacja_Kliencka"
              mc:Ignorable="d" 
-             d:DesignHeight="375" d:DesignWidth="800">
-    <Grid Background="#FFC500FF">
+             d:DesignHeight="600" d:DesignWidth="900">
+    <Grid>
         <Label x:Name="lbl_nazwa" Content="Nazwa" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="350" Foreground="#FFFDFDFD" FontSize="40" Margin="10,10,0,0"/>
         <Button x:Name="btn_start" Content="START" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" Margin="10,90,0,0" Click="btn_start_Click" Background="#FF75F11F"/>
         <Button x:Name="btn_log" Content="LOG" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" Margin="115,90,0,0" Click="btn_log_Click" Background="#FF25D3F9"/>
@@ -14,7 +14,7 @@
         <Label Content="Status Klienta:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="350" Foreground="#FFFDFDFD" FontSize="25" Margin="10,199,0,0"/>
         <Label x:Name="lbl_Status" Content="--Status" HorizontalAlignment="Left" Height="50" Margin="20,254,0,0" VerticalAlignment="Top" Width="311" Foreground="White" FontSize="25"/>
         <Label Content="Aktywne Zadanie:" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="350" Foreground="#FFFDFDFD" FontSize="25" Margin="10,309,0,0" RenderTransformOrigin="0.444,2.593"/>
-        <TextBlock x:Name="lbl_Zadanie" TextWrapping="WrapWithOverflow" Text="zadanie" HorizontalAlignment="Left" Height="100" Margin="389,266,0,0" VerticalAlignment="Top" Width="396" Foreground="White" FontSize="16"/>
+        <TextBlock x:Name="lbl_Zadanie" TextWrapping="WrapWithOverflow" Text="zadanie" HorizontalAlignment="Left" Height="100" Margin="10,365,0,0" VerticalAlignment="Top" Width="858" Foreground="White" FontSize="16"/>
 
     </Grid>
 </UserControl>
