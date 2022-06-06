@@ -208,12 +208,14 @@ namespace Aplikacja_Kliencka
 
         private int DoWork(List<String> param)
         {
+            Debug.WriteLine(param[1]);
             int kodWyjsciowy = -1;
             if (param.Count < 1)
             {
                 throw new Exception("Nie przekazano parametrow");
             }
-            string task = param[0];
+            string task = param[1];
+            param.RemoveAt(0);
             bool keyExists = _config.Tasks.ContainsKey(task);
             if (keyExists)
             {

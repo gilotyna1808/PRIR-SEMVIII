@@ -1,2 +1,2 @@
 Rozpoczecie obliczen
-1: Nie jest liczba pierwsza
+2: Jest liczba pierwsza
