@@ -373,5 +373,16 @@ namespace Aplikacja_Kliencka
             btn_settings_cli.Margin = new Thickness(0, i + 3 * m, 0, 0);
             btn_settings_task.Margin = new Thickness(0, i + 4 * m, 0, 0);
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if(clientViews != null)
+            {
+                foreach(var c in clientViews)
+                {
+                    c.ForceStop();
+                }
+            }
+        }
     }
 }

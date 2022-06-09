@@ -160,5 +160,22 @@ namespace Aplikacja_Kliencka
             }
             backgroudWorkEnd = true;
         }
+
+        public void ForceStop()
+        {
+            flagStop = true;
+            _client.ForceStop();
+            if (watekAktualizacjaStatusu != null) watekAktualizacjaStatusu.Interrupt();
+        }
+
+        public void Start()
+        {
+            btn_start_Click(null, null);
+        }
+
+        public void Stop()
+        {
+            btn_stop_Click(null, null);
+        }
     }
 }

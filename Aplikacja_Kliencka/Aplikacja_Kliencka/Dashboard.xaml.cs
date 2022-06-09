@@ -68,5 +68,66 @@ namespace Aplikacja_Kliencka
             lbl_numberOfActiveClients.Content = "Liczba aktywnych klientow: " + currentNumOfClients;
             lbl_maxNumberOfActiveClients.Content = "Maksymalna liczba aktywnych klientow: " + maxNumOfClients;
         }
+
+        private void btn_add_x_Click(object sender, RoutedEventArgs e)
+        {
+            int counter = clientViews.Count;
+            int i = 0;
+            int temp = counter;
+
+
+            if (!int.TryParse(txt_add_x.Text, out i))
+            {
+                MessageBox.Show("Błędna liczba klientów do dodania");
+                throw new Exception();
+            }
+
+            for (int j = 0; j < i; j++)
+            {
+                if (counter < _config.ClientCount)
+                {
+                    btn_add_Click(sender, e);
+                }
+            }
+
+            if (temp + i > _config.ClientCount)
+            {
+                temp = _config.ClientCount - temp;
+                MessageBox.Show("Osiągnięto limit klientów \nDodano " + temp + " Klientów");
+            }
+        }
+
+        private void txt_add_x_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            int i = 0;
+            if(btn_add_x != null)
+            {
+                if (int.TryParse(txt_add_x.Text, out i))
+                {
+                    btn_add_x.Content = ("Dodaj: " + i);
+                    btn_add_x.IsEnabled = true;
+                }
+                else 
+                {
+                    btn_add_x.IsEnabled = false;
+                }
+            }
+        }
+
+        private void btn_start_all_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(var c in clientViews)
+            {
+                c.Start();
+            }
+        }
+
+        private void btn_stop_all_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var c in clientViews)
+            {
+                c.Stop();
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Aplikacja_Kliencka"
              mc:Ignorable="d" 
-             d:DesignHeight="375" d:DesignWidth="800">
+             d:DesignHeight="400" d:DesignWidth="800">
     <Grid>
         <Label Content="RabbitMQ User:" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="300" FontSize="20" Foreground="White"/>
         <TextBox x:Name="txt_userName" Margin="310,5,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextAlignment="Left" FontSize="20" TextChanged="TextChanged"/>
@@ -18,6 +18,6 @@
         <Label Content="Port:" HorizontalAlignment="Left" Height="60" Margin="5,265,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center" Foreground="White"/>
         <TextBox x:Name="txt_port" Margin="310,265,5,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged" FontSize="20"/>
         <Label Content="Kolejka z potwierdzeniami:" HorizontalAlignment="Left" Height="60" Margin="5,330,0,0" VerticalAlignment="Top" Width="300" FontSize="20" VerticalContentAlignment="Center" Foreground="White"/>
-        <TextBox x:Name="txt_queue_res" Margin="310,330,4,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged"/>
+        <TextBox x:Name="txt_queue_res" Margin="310,330,4,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" VerticalContentAlignment="Center" TextChanged="TextChanged" FontSize="20"/>
     </Grid>
 </UserControl>

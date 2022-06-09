@@ -376,3 +376,5 @@ $[{ DateTime.Now.ToString()}] Uruchomienie klienta
 [06.06.2022 07:02:31] Uruchomienie Obliczen, Argumenty(1 Prime 2)
 [06.06.2022 07:02:41] Koniec Obliczeń, kod wyjsciowy programu0
 [06.06.2022 07:02:41] Koniec Obliczeń
+[09.06.2022 05:56:34] Uruchomienie klienta
+[09.06.2022 06:00:29] Uruchomienie klienta
