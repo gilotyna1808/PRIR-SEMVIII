@@ -1,0 +1,34 @@
+[09.06.2022 07:36:37] Uruchomienie klienta
+[09.06.2022 07:37:47] Uruchomienie klienta
+[09.06.2022 07:37:47] Pobranie wiadomości
+[09.06.2022 07:37:47] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:37:57] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:37:57] Koniec Obliczeń
+[09.06.2022 07:37:57] Pobranie wiadomości
+[09.06.2022 07:37:57] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:38:07] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:38:07] Koniec Obliczeń
+[09.06.2022 07:38:07] Pobranie wiadomości
+[09.06.2022 07:38:07] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:38:17] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:38:17] Koniec Obliczeń
+[09.06.2022 07:38:17] Pobranie wiadomości
+[09.06.2022 07:38:17] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:38:27] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:38:27] Koniec Obliczeń
+[09.06.2022 07:38:27] Pobranie wiadomości
+[09.06.2022 07:38:27] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:38:37] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:38:37] Koniec Obliczeń
+[09.06.2022 07:40:41] Pobranie wiadomości
+[09.06.2022 07:40:41] Uruchomienie Obliczen, Argumenty(2 Fibonacci 6)
+[09.06.2022 07:40:51] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:40:51] Koniec Obliczeń
+[09.06.2022 07:41:42] Pobranie wiadomości
+[09.06.2022 07:41:42] Uruchomienie Obliczen, Argumenty(8 Prime 177013)
+[09.06.2022 07:41:52] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:41:52] Koniec Obliczeń
+[09.06.2022 07:43:22] Pobranie wiadomości
+[09.06.2022 07:43:22] Uruchomienie Obliczen, Argumenty(9 Prime 1231231)
+[09.06.2022 07:43:32] Koniec Obliczeń, kod wyjsciowy programu0
+[09.06.2022 07:43:32] Koniec Obliczeń

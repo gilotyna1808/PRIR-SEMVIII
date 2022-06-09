@@ -135,24 +135,6 @@ namespace Aplikacja_Kliencka
                 MessageBox.Show(e.Message);
             }
         }
-
-        /// <summary>
-        /// Metoda konfigurująca dane połączeniowe
-        /// </summary>
-        private void KonfigurujPolaczenie(ref ConnectionFactory factory)
-        {
-            string userName = "guest";
-            string password = "guest";
-            string vHost = "";
-            string hostName = @"localhost";
-            int port = 5672;
-            factory.UserName = userName;
-            factory.Password = password;
-            factory.HostName = hostName;
-            factory.VirtualHost =  vHost;
-            factory.Port = port;
-        }
-
         private void Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
             //Powiadomienie, że zaczęto operacje na wiadomości
